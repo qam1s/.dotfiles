@@ -35,7 +35,7 @@
   "git_panel": { "dock": "left", "default_width": 200 },
   "outline_panel": { "button": false },
   "collaboration_panel": { "button": false },
-  "terminal": { "default_height": 9999 },
+  "terminal": { "default_height": 750 },
   "unstable.ui_density": "compact",
   // --- ai ---
   "agent_servers": { "opencode": { "type": "registry" } },
