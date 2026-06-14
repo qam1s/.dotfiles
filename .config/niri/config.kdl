@@ -36,11 +36,15 @@ cursor {
 }
 screenshot-path "~/screen_%Y-%m-%d_%H-%M-%S.png"
 binds {
-    Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+O repeat=false { toggle-overview; }
-    Mod+Q repeat=false { close-window; }
+    Mod+Return { spawn "alacritty"; }
+    Mod+B { spawn "firefox"; }
+    Mod+Z { spawn "zeditor"; }
+    Mod+M { spawn "alacritty" "-e" "yazi"; }
+    Mod+T { spawn "Telegram"; }
+    Mod+D { spawn "fuzzel"; }
+    Mod+O { toggle-overview; }
     Mod+F { fullscreen-window; }
+    Mod+Q repeat=false { close-window; }
     Mod+Space { screenshot; }
     Mod+Down { focus-monitor-down; }
     Mod+Up { focus-monitor-up; }
@@ -58,6 +62,6 @@ binds {
     XF86AudioStop allow-when-locked=true { spawn-sh "playerctl stop"; }
     XF86AudioPrev allow-when-locked=true { spawn-sh "playerctl previous"; }
     XF86AudioNext allow-when-locked=true { spawn-sh "playerctl next"; }
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+5%"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "5%-"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+2%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "2%-"; }
 }
