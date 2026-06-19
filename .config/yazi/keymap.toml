@@ -1,0 +1,11 @@
+[[mgr.prepend_keymap]]
+on = "c"
+run = "yank"
+
+[[mgr.prepend_keymap]]
+on = "v"
+run = "paste"
+
+[[mgr.prepend_keymap]]
+on = "n"
+run = "create"
