@@ -1,6 +1,6 @@
 {
   "telemetry": { "diagnostics": false, "metrics": false },
-  "file_scan_exclusions": ["**/__pycache__", "**/.pytest_cache"],
+  "file_scan_exclusions": ["**/__pycache__", "**/.pytest_cache", "**/.git"],
   // --- ui ---
   "theme": {
     "mode": "system",
@@ -38,23 +38,10 @@
   "terminal": { "default_height": 750 },
   "unstable.ui_density": "compact",
   // --- ai ---
-  "agent_servers": { "opencode": { "type": "registry" } },
   "context_servers": {
     "playwright": {
       "command": "npx",
       "args": ["@playwright/mcp@latest"],
-    },
-    "mcp-server-context7": {
-      "enabled": true,
-      "settings": {
-        "context7_api_key": "",
-      },
-    },
-    "mcp-server-github": {
-      "enabled": true,
-      "settings": {
-        "github_personal_access_token": "GITHUB_PERSONAL_ACCESS_TOKEN",
-      },
     },
   },
   "agent": {
@@ -62,18 +49,12 @@
     "default_width": 300,
     "tool_permissions": { "default": "allow" },
     "default_profile": "write",
-    "default_model": {
-      "enable_thinking": true,
-      "provider": "copilot_chat",
-      "model": "claude-haiku-4.5",
-    },
-    "model_parameters": [],
+    "default_model": { "provider": "mistral", "model": "codestral-latest" },
   },
   "edit_predictions": { "mode": "subtle", "provider": "zed" },
   // --- qa ---
   "autosave": "on_focus_change",
   "languages": {
-    "Rust": { "format_on_save": "on" },
     "Python": {
       "format_on_save": "on",
       "language_servers": ["ruff", "ty"],
