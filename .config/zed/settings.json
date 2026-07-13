@@ -1,15 +1,16 @@
 {
   "telemetry": { "diagnostics": false, "metrics": false },
-  "file_scan_exclusions": ["**/__pycache__", "**/.pytest_cache", "**/.git"],
+  "file_scan_exclusions": ["**/__pycache__", "**/.pytest_cache", "**/.git", "**/.ruff_cache"],
   // --- ui ---
+  "window_decorations": "server",
   "theme": {
     "mode": "system",
     "light": "Catppuccin Frappé - No Italics",
     "dark": "Catppuccin Frappé - No Italics",
   },
   "buffer_font_size": 20.8,
-  "ui_font_size": 18,
-  "agent_buffer_font_size": 19,
+  "ui_font_size": 17,
+  "agent_buffer_font_size": 20,
   "buffer_line_height": { "custom": 1 },
   "gutter": {
     "line_numbers": false,
@@ -38,12 +39,6 @@
   "terminal": { "default_height": 750 },
   "unstable.ui_density": "compact",
   // --- ai ---
-  "context_servers": {
-    "playwright": {
-      "command": "npx",
-      "args": ["@playwright/mcp@latest"],
-    },
-  },
   "agent": {
     "dock": "right",
     "default_width": 300,
