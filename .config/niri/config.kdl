@@ -21,28 +21,33 @@ output "eDP-1" {
     position x=0 y=1366
 }
 layout {
-    gaps 2
+    preset-column-widths {
+        proportion 0.5
+        proportion 1.0
+    }
+    gaps 0
     focus-ring {
-        width 2
+        width 0
     }
 }
 window-rule {
     match app-id=".*"
-    open-fullscreen true
+    open-maximized true
 }
 cursor {
     hide-after-inactive-ms 4444
 }
 screenshot-path "~/screen_%Y-%m-%d_%H-%M-%S.png"
 binds {
-    Mod+Return { spawn "alacritty"; }
+    Mod+Return { spawn "wezterm" ; }
     Mod+B { spawn "firefox"; }
     Mod+Z { spawn "zeditor"; }
-    Mod+M { spawn "alacritty" "-e" "yazi"; }
+    Mod+M { spawn "wezterm" "-e" "yazi"; }
     Mod+T { spawn "Telegram"; }
     Mod+D { spawn "fuzzel"; }
     Mod+O { toggle-overview; }
-    Mod+F { fullscreen-window; }
+    Mod+F { switch-preset-column-width; }
+    Mod+Shift+F { fullscreen-window; }
     Mod+Q repeat=false { close-window; }
     Mod+Space { screenshot; }
     Mod+Down { focus-monitor-down; }
