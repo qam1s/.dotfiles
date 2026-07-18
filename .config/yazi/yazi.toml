@@ -1,0 +1,9 @@
+[opener]
+open = [
+  { run = 'xdg-open "$@"', desc = "Open" }
+]
+
+[open]
+rules = [
+  { mime = "*", use = "open" }
+]
