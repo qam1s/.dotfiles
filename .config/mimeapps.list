@@ -1,9 +1,13 @@
 [Default Applications]
 application/pdf=org.mozilla.firefox.desktop
+application/msword=dev.zed.Zed.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=dev.zed.Zed.desktop
 image/png=imv.desktop
 image/jpeg=imv.desktop
 image/jpg=imv.desktop
 image/gif=imv.desktop
 image/bmp=imv.desktop
+text/plain=dev.zed.Zed.desktop
+text/x-script.python=dev.zed.Zed.desktop
+text/x-shellscript=dev.zed.Zed.desktop
 video/mp4=mpv.desktop
-text/plain=micro.desktop
