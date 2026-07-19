@@ -29,7 +29,9 @@ table.insert(copy_mode, {
 })
 
 config.font_size = 15.0
-
+config.hide_tab_bar_if_only_one_tab = true
+config.show_new_tab_button_in_tab_bar = false
+config.window_close_confirmation = "NeverPrompt"
 config.keys = {
   {
     key = "Space",
@@ -68,6 +70,16 @@ config.keys = {
       key = "c",
       mods = "CTRL",
     }),
+  },
+}
+
+config.colors = {
+  background = "#2f2f2f",
+  tab_bar = {
+    active_tab = {
+      bg_color = "#2f2f2f",
+      fg_color = "#ffffff",
+    },
   },
 }
 
