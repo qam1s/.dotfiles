@@ -28,7 +28,6 @@
       "ctrl-c": "terminal::Copy",
       "ctrl-v": "terminal::Paste",
       "ctrl-z": ["terminal::SendKeystroke", "ctrl-c"],
-      "ctrl-b": "workspace::ToggleLeftDock",
       "ctrl-^": "workspace::NewTerminal",
       "ctrl-w": "pane::CloseActiveItem",
       "ctrl-@": "terminal_panel::Toggle",
