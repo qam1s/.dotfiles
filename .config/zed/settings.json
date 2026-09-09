@@ -1,8 +1,4 @@
 {
-  "telemetry": { "diagnostics": false, "metrics": false },
-  "file_scan_exclusions": ["**/__pycache__", "**/.pytest_cache", "**/.git", "**/.ruff_cache"],
-  // --- ui ---
-  "window_decorations": "server",
   "theme": {
     "mode": "dark",
     "light": "Catppuccin Frappé - No Italics",
@@ -11,18 +7,9 @@
   "buffer_font_size": 21,
   "ui_font_size": 17,
   "buffer_line_height": { "custom": 1 },
-  "gutter": {
-    "line_numbers": false,
-    "runnables": false,
-    "breakpoints": false,
-    "folds": false,
-    "bookmarks": false,
-  },
-  "tab_bar": {"show_tab_bar_buttons": false, "show_nav_history_buttons": false},
-  "tabs": {"file_icons": true, "git_status": true, "show_diagnostics":"all"},
-  "toolbar": { "breadcrumbs": false, "quick_actions": false },
+  "tab_bar": { "show": false },
+  "toolbar": { "breadcrumbs": true, "quick_actions": false },
   "status_bar": { "experimental.show": false },
-  "scrollbar": { "axes": { "horizontal": false } },
   "project_panel": {
     "dock": "left",
     "bold_folder_labels": true,
@@ -34,22 +21,41 @@
   "outline_panel": { "button": false },
   "collaboration_panel": { "button": false },
   "terminal": { "font_size": 16, "default_height": 732 },
+  "bottom_dock_layout": "full",
+  "gutter": {
+    "line_numbers": false,
+    "runnables": false,
+    "breakpoints": false,
+    "folds": false,
+    "bookmarks": false,
+  },
+  "scrollbar": { "axes": { "horizontal": false } },
+  "inline_code_actions": false,
   "unstable.ui_density": "compact",
-  // --- ai ---
+  "window_decorations": "server",
   "agent": {
     "dock": "right",
-    "default_width": 300,
     "tool_permissions": { "default": "allow" },
-    "default_profile": "write",
-    "default_model": { "provider": "mistral", "model": "codestral-latest" },
+    "default_model": {
+      "enable_thinking": false,
+      "effort": "low",
+      "provider": "opencode",
+      "model": "go/mimo-v2.5",
+    },
   },
   "edit_predictions": { "mode": "subtle", "provider": "codestral" },
-  // --- qa ---
+  "telemetry": { "diagnostics": false, "metrics": false },
+  "file_scan_exclusions": [
+    "**/__pycache__",
+    "**/.pytest_cache",
+    "**/.git",
+    "**/.ruff_cache",
+  ],
   "autosave": "on_focus_change",
+  "format_on_save": "on",
   "languages": {
     "Python": {
-      "format_on_save": "on",
-      "language_servers": ["ruff", "!basedpyright", "ty"],
+      "language_servers": ["ruff", "ty"],
       "formatter": [
         { "language_server": { "name": "ruff" } },
         { "code_action": "source.organizeImports.ruff" },
