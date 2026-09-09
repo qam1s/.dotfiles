@@ -21,7 +21,7 @@
   "git_panel": { "tree_view": true, "dock": "left", "default_width": 200 },
   "outline_panel": { "button": false },
   "collaboration_panel": { "button": false },
-  "terminal": { "font_size": 16, "default_height": 732 },
+  "terminal": { "font_size": 16, "cursor_shape": "bar", "default_height": 732 },
   "bottom_dock_layout": "full",
   "gutter": {
     "line_numbers": false,
