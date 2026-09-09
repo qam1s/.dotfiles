@@ -1,11 +1,11 @@
 [
   {
-    "context": "Workspace",
+    "context": "Editor || Workspace",
     "bindings": {
-      "ctrl-r": ["task::Spawn", { "task_name": "Run file" }],
-      "ctrl-^": "workspace::NewTerminal",
+      "ctrl-e": "project_panel::ToggleFocus",
       "ctrl-@": "terminal_panel::Toggle",
-      "ctrl-shift-b": "git::Branch",
+      "ctrl-^": "workspace::NewTerminal",
+      "ctrl-b": "git::Branch",
     },
   },
   {
@@ -13,6 +13,8 @@
     "bindings": {
       "ctrl-m": "editor::GoToDiagnostic",
       "ctrl-y": "editor::GoToDefinition",
+      "ctrl-r": ["task::Spawn", { "task_name": "Run file" }],
+      "ctrl-shift-g": "go_to_line::Toggle",
     },
   },
   {
@@ -28,9 +30,20 @@
       "ctrl-c": "terminal::Copy",
       "ctrl-v": "terminal::Paste",
       "ctrl-z": ["terminal::SendKeystroke", "ctrl-c"],
-      "ctrl-^": "workspace::NewTerminal",
       "ctrl-w": "pane::CloseActiveItem",
-      "ctrl-@": "terminal_panel::Toggle",
+    },
+  },
+  {
+    "context": "!Modal",
+    "bindings": {
+      "ctrl-o": "projects::OpenRecent",
+      "ctrl-p": "file_finder::Toggle",
+    },
+  },
+  {
+    "context": "!GitPanel",
+    "bindings": {
+      "ctrl-g": "git_panel::ToggleFocus",
     },
   },
 ]
