@@ -10,6 +10,7 @@
   "tab_bar": { "show": false },
   "toolbar": { "breadcrumbs": true, "quick_actions": false },
   "status_bar": { "experimental.show": false },
+  "tabs": { "file_icons": true, "git_status": true, "show_diagnostics": "all" },
   "project_panel": {
     "dock": "left",
     "bold_folder_labels": true,
