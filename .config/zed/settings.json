@@ -36,12 +36,9 @@
   "window_decorations": "server",
   "agent": {
     "dock": "right",
-    "tool_permissions": { "default": "allow" },
     "default_model": {
-      "enable_thinking": false,
-      "effort": "low",
       "provider": "opencode",
-      "model": "go/mimo-v2.5",
+      "model": "go/deepseek-v4-flash",
     },
   },
   "edit_predictions": { "mode": "subtle", "provider": "codestral" },

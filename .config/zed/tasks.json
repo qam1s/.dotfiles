@@ -1,5 +1,12 @@
 [
   {
+    "label": "Agent",
+    "command": "wezterm",
+    "args": ["start", "--cwd", "$ZED_WORKTREE_ROOT", "--", "opencode"],
+    "reveal": "never",
+    "hide": "always",
+  },
+  {
     "label": "Run file",
     "command": "python $ZED_FILE",
   },

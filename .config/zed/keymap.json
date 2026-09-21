@@ -6,6 +6,7 @@
       "ctrl-@": "terminal_panel::Toggle",
       "ctrl-^": "workspace::NewTerminal",
       "ctrl-b": "git::Branch",
+      "alt-a": ["task::Spawn", { "task_name": "Agent" }],
     },
   },
   {
