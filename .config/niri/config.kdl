@@ -18,7 +18,7 @@ output "DP-1" {
     position x=0 y=0
 }
 output "eDP-1" {
-    position x=0 y=1366
+    position x=0 y=777
 }
 prefer-no-csd
 animations {
@@ -38,6 +38,7 @@ layout {
 window-rule {
     match app-id=".*"
     open-maximized true
+    open-focused true
 }
 cursor {
     hide-after-inactive-ms 4444
