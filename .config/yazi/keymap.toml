@@ -1,11 +1,23 @@
 [[mgr.prepend_keymap]]
-on = "c"
+on = "<C-c>"
 run = "yank"
 
 [[mgr.prepend_keymap]]
-on = "v"
+on = "<C-x>"
+run = "yank --cut"
+
+[[mgr.prepend_keymap]]
+on = "<C-v>"
 run = "paste"
 
 [[mgr.prepend_keymap]]
-on = "n"
+on = "<C-n>"
 run = "create"
+
+[[mgr.prepend_keymap]]
+on = "<C-d>"
+run = "remove"
+
+[[mgr.prepend_keymap]]
+on = "<C-r>"
+run = "rename"
