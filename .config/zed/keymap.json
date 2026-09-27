@@ -6,7 +6,7 @@
       "ctrl-@": "terminal_panel::Toggle",
       "ctrl-^": "workspace::NewTerminal",
       "ctrl-b": "git::Branch",
-      "alt-a": ["task::Spawn", { "task_name": "Agent" }],
+      "alt-a": "workspace::ToggleRightDock",
     },
   },
   {
@@ -35,7 +35,7 @@
     },
   },
   {
-    "context": "!Modal",
+    "context": "!Terminal",
     "bindings": {
       "ctrl-o": "projects::OpenRecent",
       "ctrl-p": "file_finder::Toggle",
