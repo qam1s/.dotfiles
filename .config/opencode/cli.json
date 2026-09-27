@@ -6,13 +6,20 @@
   "session": {
     "sidebar": "hide"
   },
+  "tabs": {
+    "mode": "off"
+  },
   "prompt": {
     "editor": false
   },
-  "tabs": {
-    "enabled": false
+  "cursor": {
+    "style": "default"
   },
   "keybinds": {
-    "session.new": "ctrl+n,<leader>n"
+    "session.new": "ctrl+a",
+    "session.list": "ctrl+o",
+    "diff.open": "ctrl+d",
+    "input.line.home": "ctrl+a,home",
+    "input.line.end": "ctrl+e,end"
   }
 }
