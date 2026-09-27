@@ -48,6 +48,7 @@ binds {
     Mod+Return { spawn "wezterm"; }
     Mod+B { spawn "firefox"; }
     Mod+Z { spawn "zeditor"; }
+    Mod+A { spawn "wezterm" "-e" "opencode"; }
     Mod+M { spawn "wezterm" "-e" "yazi"; }
     Mod+D { spawn "fuzzel"; }
     Mod+O { toggle-overview; }
