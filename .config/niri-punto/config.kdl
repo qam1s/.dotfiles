@@ -1,0 +1,15 @@
+layout "us" "ru"
+
+binds {
+    Mod word
+    Mod+Shift phrase
+    Double-Shift phrase
+}
+
+timings {
+    double-shift-ms 400
+    undo-ms 3000
+    debounce-ms 30
+    pending-ms 2000
+    tap-ms 300
+}
