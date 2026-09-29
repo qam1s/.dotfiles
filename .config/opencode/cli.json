@@ -4,7 +4,8 @@
     "name": "catppuccin-macchiato"
   },
   "session": {
-    "sidebar": "hide"
+    "sidebar": "hide",
+    "tps": false
   },
   "tabs": {
     "mode": "off"
@@ -18,8 +19,11 @@
   "keybinds": {
     "session.new": "ctrl+a",
     "session.list": "ctrl+o",
-    "diff.open": "ctrl+d",
-    "input.line.home": "ctrl+a,home",
-    "input.line.end": "ctrl+e,end"
+    "diff.open": "ctrl+d"
+  },
+  "animations": false,
+  "attention": {
+    "sound": true,
+    "volume": 0.5
   }
 }
