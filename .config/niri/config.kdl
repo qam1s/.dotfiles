@@ -50,6 +50,7 @@ binds {
     Mod+Z { spawn "zeditor"; }
     Mod+A { spawn "wezterm" "-e" "opencode"; }
     Mod+M { spawn "wezterm" "-e" "yazi"; }
+    Mod+V { spawn "wezterm" "-e" "kvn"; }
     Mod+D { spawn "fuzzel"; }
     Mod+O { toggle-overview; }
     Mod+F { switch-preset-column-width; }
