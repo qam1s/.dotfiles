@@ -4,7 +4,7 @@
     "light": "Catppuccin Frappé - No Italics",
     "dark": "Catppuccin Macchiato - No Italics",
   },
-  "buffer_font_size": 21,
+  "buffer_font_size": 20.5,
   "ui_font_size": 17,
   "buffer_line_height": { "custom": 1 },
   "tab_bar": { "show": false },
@@ -37,10 +37,7 @@
     "flexible": false,
     "default_width": 999999,
     "terminal_init_command": "opencode",
-    "default_model": {
-      "provider": "opencode",
-      "model": "go/deepseek-flash",
-    },
+    "default_model": { "provider": "opencode", "model": "go/deepseek-flash" },
   },
   "edit_predictions": { "mode": "subtle", "provider": "codestral" },
   "telemetry": { "diagnostics": false, "metrics": false },
@@ -53,6 +50,7 @@
   "autosave": "on_focus_change",
   "format_on_save": "on",
   "languages": {
+    "Rust": { "language_servers": [] },
     "Python": {
       "language_servers": ["ruff", "ty"],
       "formatter": [
