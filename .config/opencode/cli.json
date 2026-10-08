@@ -4,7 +4,14 @@
   "tabs": { "mode": "off" },
   "prompt": { "editor": false },
   "cursor": { "style": "default" },
-  "keybinds": { "session.new": "ctrl+a", "session.list": "ctrl+o" },
   "animations": false,
-  "attention": { "sound": true, "volume": 1 }
+  "attention": { "sound": true, "volume": 1 },
+  "keybinds": {
+    "session.new": "ctrl+a",
+    "session.list": "ctrl+o",
+    "session.first": "shift+pageup",
+    "session.last": "shift+pagedown",
+    "input.line.home": "ctrl+a,home",
+    "input.line.end": "ctrl+e,end"
+  }
 }
