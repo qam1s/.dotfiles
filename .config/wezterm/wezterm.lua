@@ -97,6 +97,11 @@ config.keys = {
         action = act.DisableDefaultAssignment,
     },
     {
+        key = "s",
+        mods = "CTRL",
+        action = act.SendString("~/.sysinfo.sh\n"),
+    },
+    {
         key = "z",
         mods = "CTRL",
         action = act.SendKey({
