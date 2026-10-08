@@ -28,10 +28,15 @@
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-c": "terminal::Copy",
       "ctrl-v": "terminal::Paste",
       "ctrl-z": ["terminal::SendKeystroke", "ctrl-c"],
       "ctrl-w": "pane::CloseActiveItem",
+      "pageup": "terminal::ScrollPageUp",
+      "pagedown": "terminal::ScrollPageDown",
+      "shift-pageup": ["terminal::SendText", "\u001b[5;2~"],
+      "shift-pagedown": ["terminal::SendText", "\u001b[6;2~"],
+      "shift-home": ["terminal::SendText", "\u001b[1;2H"],
+      "shift-end": ["terminal::SendText", "\u001b[1;2F"],
     },
   },
   {

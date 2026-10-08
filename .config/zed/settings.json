@@ -19,7 +19,12 @@
     "default_width": 200,
   },
   "git_panel": { "tree_view": true, "dock": "left", "default_width": 200 },
-  "terminal": { "font_size": 17, "cursor_shape": "bar", "default_height": 732 },
+  "terminal": {
+    "font_size": 17,
+    "cursor_shape": "bar",
+    "default_height": 732,
+    "copy_on_select": true,
+  },
   "bottom_dock_layout": "full",
   "gutter": {
     "line_numbers": false,
