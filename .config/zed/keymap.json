@@ -37,6 +37,8 @@
       "shift-pagedown": ["terminal::SendText", "\u001b[6;2~"],
       "shift-home": ["terminal::SendText", "\u001b[1;2H"],
       "shift-end": ["terminal::SendText", "\u001b[1;2F"],
+      "ctrl-shift-left": ["terminal::SendText", "\u001b[1;6D"],
+      "ctrl-shift-right": ["terminal::SendText", "\u001b[1;6C"],
     },
   },
   {

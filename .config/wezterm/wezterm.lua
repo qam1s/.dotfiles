@@ -97,6 +97,26 @@ config.keys = {
         action = act.DisableDefaultAssignment,
     },
     {
+        key = "LeftArrow",
+        mods = "CTRL|SHIFT",
+        action = act.DisableDefaultAssignment,
+    },
+    {
+        key = "RightArrow",
+        mods = "CTRL|SHIFT",
+        action = act.DisableDefaultAssignment,
+    },
+    {
+        key = "UpArrow",
+        mods = "CTRL|SHIFT",
+        action = act.DisableDefaultAssignment,
+    },
+    {
+        key = "DownArrow",
+        mods = "CTRL|SHIFT",
+        action = act.DisableDefaultAssignment,
+    },
+    {
         key = "s",
         mods = "CTRL",
         action = act.SendString("~/.sysinfo.sh\n"),

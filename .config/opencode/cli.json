@@ -12,6 +12,8 @@
     "session.first": "shift+pageup",
     "session.last": "shift+pagedown",
     "input.line.home": "ctrl+a,home",
-    "input.line.end": "ctrl+e,end"
+    "input.line.end": "ctrl+e,end",
+    "input.select.word.backward": "alt+shift+b,alt+shift+left,ctrl+shift+left",
+    "input.select.word.forward": "alt+shift+f,alt+shift+right,ctrl+shift+right"
   }
 }
