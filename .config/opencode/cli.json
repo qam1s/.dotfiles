@@ -5,7 +5,7 @@
   "prompt": { "editor": false },
   "cursor": { "style": "default" },
   "animations": false,
-  "attention": { "sound": true, "volume": 1 },
+  "attention": { "sound": true, "volume": 0.5 },
   "keybinds": {
     "session.new": "ctrl+a",
     "session.list": "ctrl+o",
