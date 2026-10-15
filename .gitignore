@@ -1,5 +1,5 @@
 .config/fish/fish_variables
-
+.config/ironbar/
 .config/opencode/node_modules/
 .config/opencode/package-lock.json
 .config/opencode/auth.json

@@ -1,4 +1,4 @@
-spawn-at-startup "sh" "-c" "bash ~/.start.sh & firefox & sleep 2 && zeditor"
+spawn-at-startup "sh" "-c" "bash ~/.start.sh & firefox & ironbar & sleep 2 && zeditor"
 hotkey-overlay {
     skip-at-startup
 }
@@ -52,6 +52,7 @@ binds {
     Mod+M { spawn "wezterm" "-e" "yazi"; }
     Mod+V { spawn "wezterm" "-e" "kvn"; }
     Mod+D { spawn "fuzzel"; }
+    Mod+H { spawn "ironbar" "bar" "bar" "toggle-visible"; }
     Mod+O { toggle-overview; }
     Mod+F { switch-preset-column-width; }
     Mod+Shift+F { fullscreen-window; }
