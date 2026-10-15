@@ -41,6 +41,7 @@ config.show_new_tab_button_in_tab_bar = false
 config.use_fancy_tab_bar = false
 config.default_cursor_style = "SteadyBar"
 config.window_close_confirmation = "NeverPrompt"
+config.warn_about_missing_glyphs = false
 config.window_content_alignment = { horizontal = "Center", vertical = "Center" }
 config.keys = {
     {
