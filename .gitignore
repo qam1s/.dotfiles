@@ -5,3 +5,5 @@
 .config/opencode/auth.json
 .config/opencode/service.json
 .config/opencode/*.log
+.config/opencode/skills/skills/
+.config/opencode/AGENTS.md
