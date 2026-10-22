@@ -1,1 +1,11 @@
-{ "agents": { "title": { "disabled": true } } }
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agents": {
+    "plan": {
+      "disabled": true
+    },
+    "title": {
+      "disabled": true
+    }
+  }
+}
