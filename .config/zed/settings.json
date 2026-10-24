@@ -37,6 +37,7 @@
   "scroll_beyond_last_line": "off",
   "inline_code_actions": false,
   "unstable.ui_density": "compact",
+  "markdown_preview": { "limit_content_width": false },
   "agent": {
     "dock": "right",
     "flexible": false,
